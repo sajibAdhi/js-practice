@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Nested Function</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var num1 = 10;
+		var num2 = 20;
+		var fun = '+';
+		var br = '<br>';
+		document.write("Addition : " + add(num1,num2) + br);
+		document.write("Subtraction : " + sub(num1,num2) + br);
+		document.write("Multiplication : " + mul(num1,num2) + br);
+		document.write("Divition : " + div(num1,num2) + br);
+		document.write("Modulus : " + mod(num1,num2) + br);
+		document.write("Squar then add : " + sqr(num1,num2) + br);
+
+		function add(num1,num2){ return num1+num2; }
+		function sub(num1,num2){ return num1-num2; }
+		function mul(num1,num2){ return num1*num2; }
+		function div(num1,num2){ return num1/num2; }
+		function mod(num1,num2){ return num1%num2; }
+		function sqr(num1,num2){ 
+			var result;
+			result = ss(num1) + ss(num2);
+			return result;
+		}
+
+		function ss(num){
+			return num*num;
+		}
+	</script>
+
+
+</body>
+</html>

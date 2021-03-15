@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to wait 3 seconds, then alert "Hello".</p>
+
+<button id="myP" onload="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+  setTimeout(function(){
+  	document.getElementById("myP").style.visibility = "hidden"; 
+
+  }, 3000);
+}
+
+window.onload = myFunction();
+</script>
+
+</body>
+</html>

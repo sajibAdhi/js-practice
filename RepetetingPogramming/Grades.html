@@ -1,0 +1,60 @@
+<!DOCTYPE html>  
+<html lang="en-US">  
+  <head>
+    <meta charset="utf-8">
+    <title>Avg Grade Demo</title>
+    <link rel="stylesheet" href="style.css">
+  </head>     
+    <body>
+      <header>
+        <img src="../Images/marketing.jpg">
+        <h1>        
+          JavaScript While Loops - Average Grade Demo 
+        </h1>
+      </header>
+      <p>
+        Loops are great for repeating groups of code for you automatically. You can write the lines of code once, and then tell them to repeat as many times as you need.
+      </p>
+       
+      <p>
+        The results of your JavaScript code will display in the gold box below...
+      </p>
+      <div class="results">
+        <script>
+         // -----------JavaScript code goes here
+            
+            // Declare and assign values to variables
+              var avgPoints = 0;
+              var counter = 1;
+              var more = 'y';
+              var points = 0;
+              var totalPoints = 0;
+              
+            // Loop until the more variable is not equal to 'y'
+              while (more == 'y') {
+                // Prompt for input 
+                  points = prompt ("Please enter the points for assignment" + counter); 
+                  points = Number(points);
+                  more = prompt ("Are there more grades after this one? ");
+                // Display output on web page 
+                  document.write ("Points earned for assignment " + counter +
+                                ":  " + points + "<br>");
+                // Increment counter
+                  counter++;
+                  totalPoints = totalPoints + points;
+              }
+              
+            // Calculate Average
+              avgPoints = totalPoints / (counter - 1);
+              
+            // Display final average.
+              document.write ("<hr><br>Total points: " + totalPoints);
+              document.write ("<br>Average point value: " + avgPoints);
+            
+         // ------------ 
+       </script>
+      </div>
+
+   </body>  
+
+</html>  
